@@ -26,7 +26,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-if (app.Environment.IsProduction())// açýkken geliþtiri için kapalýyken düzgün çalýþtýrýr
+//if (app.Environment.IsProduction())// açýkken geliþtiri için kapalýyken düzgün çalýþtýrýr
     app.ConfigureCustomExceptionMiddleware();
 
 app.UseAuthorization();
